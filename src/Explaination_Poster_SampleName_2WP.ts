@@ -35,7 +35,7 @@ engine.addEntity(Explain_Plane11)
 //-----------------Explain_Plane12---------------------------
 const Explain_Plane12 = new Entity()
 Explain_Plane12.addComponent(new Transform({
-    position: new Vector3(0.65998, 15.234, 2.886001),
+    position: new Vector3(0.6, 15.234, 2.926),
     rotation: new Quaternion(0.7071068, -3.090862E-08, -0.7071068, 3.090862E-08),
     scale: new Vector3(2.42, 2.42, 2.42)
 }))
@@ -158,7 +158,7 @@ Explain_Plane4.addComponent(new OnPointerDown((e) => {
     }
 ))
 
-//------------Explain_Plane12--------------------------
+//------------Explain_Plane11--------------------------
 Explain_Plane11.addComponent(new OnPointerDown((e) => {
 
     canvas.visible = true                   //ボタンクリックで、canvasを表示する
@@ -197,7 +197,7 @@ UI_Back1.height = "70%"
 UI_Back1.positionY = 0
 UI_Back1.positionX = 0
 UI_Back1.color = Color4.White()
-UI_Back1.opacity = 0.5
+UI_Back1.opacity = 0.85
 UI_Back1.hAlign = "center"
 UI_Back1.vAlign = "center"
 UI_Back1.stackOrientation = UIStackOrientation.VERTICAL
@@ -323,7 +323,7 @@ close_botton.onClick = new OnClick(() => {
 const SampleName_Mat = new BasicMaterial()
 
 //★★★★説明文ソースの 変更ポイント ★★★★★★★★★★★★★★★★★★★★★★★★
-const SampleName_Tex = new Texture("images/water.jpg")
+const SampleName_Tex = new Texture("images/SampleName.png")
 SampleName_Mat.texture = SampleName_Tex
 
 SampleName_Plane.addComponent(SampleName_Mat)

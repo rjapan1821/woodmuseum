@@ -32,9 +32,9 @@ PicFrame3.addComponent(new Transform({
 const PicFrame4 = new Entity()
 PicFrame4.addComponent(new GLTFShape("models/2G_PicFrame_gltf.gltf"))
 PicFrame4.addComponent(new Transform({
-    position: new Vector3(11.879, 1.71, 11.015),
+    position: new Vector3(6.859, 9.14, 15.422),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1.633, 1.12, 0.859)
+    scale: new Vector3(4.833, 3.312, 2.545)
 }))
 
 //-----------------PicFrame5----------------------------------------------------------------------------
@@ -50,27 +50,27 @@ PicFrame5.addComponent(new Transform({
 const PicFrame6 = new Entity()
 PicFrame6.addComponent(new GLTFShape("models/2G_PicFrame_gltf.gltf"))
 PicFrame6.addComponent(new Transform({
-    position: new Vector3(5.806, 8.1, 10.101),
-    rotation: new Quaternion(0, 0.9335805, 0, -0.3583679),
-    scale: new Vector3(1.724, 1.173, 0.907)
+    position: new Vector3(11.879, 1.71, 11.015),
+    rotation: new Quaternion(0, 0, 0, 1),
+    scale: new Vector3(1.633, 1.12, 0.859)
 }))
 
 //-----------------PicFrame7----------------------------------------------------------------------------
 const PicFrame7 = new Entity()
 PicFrame7.addComponent(new GLTFShape("models/2G_PicFrame_gltf.gltf"))
 PicFrame7.addComponent(new Transform({
-    position: new Vector3(5.756, 8.2, 7.848),
+    position: new Vector3(5.785, 8.06, 7.875),
     rotation: new Quaternion(0, 0.3665012, 0, -0.9304176),
-    scale: new Vector3(1.57, 1.079, 0.821)
+    scale: new Vector3(1.76, 1.21, 0.92)
 }))
 
 //-----------------PicFrame8----------------------------------------------------------------------------
 const PicFrame8 = new Entity()
 PicFrame8.addComponent(new GLTFShape("models/2G_PicFrame_gltf.gltf"))
 PicFrame8.addComponent(new Transform({
-    position: new Vector3(12.04, 8.22, 7.837),
+    position: new Vector3(11.973, 8.38, 7.897),
     rotation: new Quaternion(0, 0.358368, 0, 0.9335805),
-    scale: new Vector3(1.1, 1.509, 0.858)
+    scale: new Vector3(1.777, 1.23, 0.699)
 }))
 
 //-----------------PicFrame9----------------------------------------------------------------------------
@@ -86,9 +86,9 @@ PicFrame9.addComponent(new Transform({
 const PicFrame10 = new Entity()
 PicFrame10.addComponent(new GLTFShape("models/2G_PicFrame_gltf.gltf"))
 PicFrame10.addComponent(new Transform({
-    position: new Vector3(7.748998, 9.080007, 15.422),
-    rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(3.965, 2.717, 2.088)
+    position: new Vector3(5.806, 8.1, 10.101),
+    rotation: new Quaternion(0, 0.9335805, 0, -0.3583679),
+    scale: new Vector3(1.724, 1.173, 0.907)
 }))
 
 //-----------------PicFrame11----------------------------------------------------------------------------
@@ -105,8 +105,8 @@ const PicFrame12 = new Entity()
 PicFrame12.addComponent(new GLTFShape("models/2G_PicFrame_gltf.gltf"))
 PicFrame12.addComponent(new Transform({
     position: new Vector3(0.7169998, 15.28, 7.283005),
-  rotation: new Quaternion(0, 0.7071068, 0, -0.7071068),
-  scale: new Vector3(3.628, 2.538, 1.948)
+    rotation: new Quaternion(0, 0.7071068, 0, -0.7071068),
+    scale: new Vector3(3.628, 2.538, 1.948)
 }))
 
 
@@ -114,11 +114,16 @@ PicFrame12.addComponent(new Transform({
 
 //----------------Plane領域---------------------------------------------------------------------------------------
 
+const scale_x = 1.55
+const scale_y = 1.55
+const scale_z = 1
+
+
 //-----------------Plane1---------------------------
 const Plane1 = new Entity()
 Plane1.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -126,7 +131,7 @@ Plane1.addComponent(new Transform({
 const Plane2 = new Entity()
 Plane2.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -134,7 +139,7 @@ Plane2.addComponent(new Transform({
 const Plane3 = new Entity()
 Plane3.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -142,7 +147,7 @@ Plane3.addComponent(new Transform({
 const Plane4 = new Entity()
 Plane4.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -151,7 +156,7 @@ Plane4.addComponent(new Transform({
 const Plane5 = new Entity()
 Plane5.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -159,7 +164,7 @@ Plane5.addComponent(new Transform({
 const Plane6 = new Entity()
 Plane6.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -167,7 +172,7 @@ Plane6.addComponent(new Transform({
 const Plane7 = new Entity()
 Plane7.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -176,7 +181,7 @@ Plane7.addComponent(new Transform({
 const Plane8 = new Entity()
 Plane8.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -184,7 +189,7 @@ Plane8.addComponent(new Transform({
 const Plane9 = new Entity()
 Plane9.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -193,7 +198,7 @@ Plane9.addComponent(new Transform({
 const Plane10 = new Entity()
 Plane10.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -201,7 +206,7 @@ Plane10.addComponent(new Transform({
 const Plane11 = new Entity()
 Plane11.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -209,7 +214,7 @@ Plane11.addComponent(new Transform({
 const Plane12 = new Entity()
 Plane12.addComponent(new Transform({
     position: new Vector3(0.005, 0.2, -0.065),
-    scale: new Vector3(1.48, 1.48, 1),
+    scale: new Vector3(scale_x, scale_y, scale_z),
     rotation: Quaternion.Euler(0, 0, 179.8),         //rotationはこのままにしておくこと
 }))
 
@@ -554,7 +559,7 @@ Plane1.addComponent(new OnPointerDown((e) => {
 const Plane1to4_Mat = new BasicMaterial()
 
 //★★★★説明文ソースの 変更ポイント ★★★★★★★★★★★★★★★★★★★★★★★★★★
-const Plane1to4_Tex = new Texture("images/test1.png")
+const Plane1to4_Tex = new Texture("images/photo1to4_1229px.png")
 Plane1to4_Mat.texture = Plane1to4_Tex
 
 Plane1.addComponent(Plane1to4_Mat)
@@ -566,7 +571,7 @@ Plane4.addComponent(Plane1to4_Mat)
 const Plane5to8_Mat = new BasicMaterial()
 
 //★★★★説明文ソースの 変更ポイント ★★★★★★★★★★★★★★★★★★★★★★★★★★
-const Plane5to8_Tex = new Texture("images/test1.png")
+const Plane5to8_Tex = new Texture("images/photo5to8_1229px.png")
 Plane5to8_Mat.texture = Plane5to8_Tex
 
 Plane5.addComponent(Plane5to8_Mat)
@@ -578,7 +583,7 @@ Plane8.addComponent(Plane5to8_Mat)
 const Plane9to12_Mat = new BasicMaterial()
 
 //★★★★説明文ソースの 変更ポイント ★★★★★★★★★★★★★★★★★★★★★★★★★★
-const Plane9to12_Tex = new Texture("images/test1.png")
+const Plane9to12_Tex = new Texture("images/photo9to12_1229px.png")
 Plane9to12_Mat.texture = Plane9to12_Tex
 
 Plane9.addComponent(Plane9to12_Mat)
